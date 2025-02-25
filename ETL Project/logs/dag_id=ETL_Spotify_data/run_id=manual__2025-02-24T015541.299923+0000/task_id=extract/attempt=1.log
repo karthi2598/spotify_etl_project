@@ -1,0 +1,152 @@
+[2025-02-24T02:00:08.232+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-02-24T02:00:08.634+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ETL_Spotify_data.extract manual__2025-02-24T01:55:41.299923+00:00 [queued]>
+[2025-02-24T02:00:08.667+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ETL_Spotify_data.extract manual__2025-02-24T01:55:41.299923+00:00 [queued]>
+[2025-02-24T02:00:08.669+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-02-24T02:00:08.729+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): extract> on 2025-02-24 01:55:41.299923+00:00
+[2025-02-24T02:00:08.773+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=178) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-02-24T02:00:08.780+0000] {standard_task_runner.py:72} INFO - Started process 190 to run task
+[2025-02-24T02:00:08.788+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'ETL_Spotify_data', 'extract', 'manual__2025-02-24T01:55:41.299923+00:00', '--job-id', '30', '--raw', '--subdir', 'DAGS_FOLDER/etl.py', '--cfg-path', '/tmp/tmp57y2ws8y']
+[2025-02-24T02:00:08.795+0000] {standard_task_runner.py:105} INFO - Job 30: Subtask extract
+[2025-02-24T02:00:08.991+0000] {task_command.py:467} INFO - Running <TaskInstance: ETL_Spotify_data.extract manual__2025-02-24T01:55:41.299923+00:00 [running]> on host 4ca03c1acb76
+[2025-02-24T02:00:09.220+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ETL_Spotify_data' AIRFLOW_CTX_TASK_ID='extract' AIRFLOW_CTX_EXECUTION_DATE='2025-02-24T01:55:41.299923+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-02-24T01:55:41.299923+00:00'
+[2025-02-24T02:00:09.223+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-02-24T02:00:09.225+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-02-24T02:00:09.226+0000] {logging_mixin.py:190} INFO - Current task name:extract state:running start_date:2025-02-24 02:00:08.636170+00:00
+[2025-02-24T02:00:09.227+0000] {logging_mixin.py:190} INFO - Dag name:ETL_Spotify_data and current dag run status:running
+[2025-02-24T02:00:09.228+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-02-24T02:00:09.981+0000] {client.py:292} ERROR - HTTP Error for GET to https://api.spotify.com/v1/me/top/tracks with Params: {'time_range': 'medium_term', 'limit': 10, 'offset': 0} returned 401 due to Valid user authentication required
+[2025-02-24T02:00:09.983+0000] {taskinstance.py:3313} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/spotipy/client.py", line 275, in _internal_call
+    response.raise_for_status()
+  File "/home/airflow/.local/lib/python3.12/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://api.spotify.com/v1/me/top/tracks?time_range=medium_term&limit=10&offset=0
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/etl.py", line 15, in get_spotify_data
+    top_tracks = sp.current_user_top_tracks(limit=10, time_range='medium_term')
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/spotipy/client.py", line 1520, in current_user_top_tracks
+    return self._get(
+           ^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/spotipy/client.py", line 327, in _get
+    return self._internal_call("GET", url, payload, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/spotipy/client.py", line 297, in _internal_call
+    raise SpotifyException(
+spotipy.exceptions.SpotifyException: http status: 401, code:-1 - https://api.spotify.com/v1/me/top/tracks?time_range=medium_term&limit=10&offset=0:
+ Valid user authentication required, reason: None
+[2025-02-24T02:00:10.047+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-02-24T02:00:10.049+0000] {logging_mixin.py:190} INFO - Task start:2025-02-24 02:00:08.636170+00:00 end:2025-02-24 02:00:10.045485+00:00 duration:1.409315
+[2025-02-24T02:00:10.051+0000] {logging_mixin.py:190} INFO - Task:<Task(PythonOperator): extract> dag:<DAG: ETL_Spotify_data> dagrun:<DagRun ETL_Spotify_data @ 2025-02-24 01:55:41.299923+00:00: manual__2025-02-24T01:55:41.299923+00:00, state:running, queued_at: 2025-02-24 01:55:41.337285+00:00. externally triggered: True>
+[2025-02-24T02:00:10.053+0000] {logging_mixin.py:190} INFO - Failure caused by http status: 401, code:-1 - https://api.spotify.com/v1/me/top/tracks?time_range=medium_term&limit=10&offset=0:
+ Valid user authentication required, reason: None
+[2025-02-24T02:00:10.064+0000] {taskinstance.py:1226} INFO - Marking task as UP_FOR_RETRY. dag_id=ETL_Spotify_data, task_id=extract, run_id=manual__2025-02-24T01:55:41.299923+00:00, execution_date=20250224T015541, start_date=20250224T020008, end_date=20250224T020010
+[2025-02-24T02:00:10.165+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-02-24T02:00:10.167+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 30 for task extract (http status: 401, code:-1 - https://api.spotify.com/v1/me/top/tracks?time_range=medium_term&limit=10&offset=0:
+ Valid user authentication required, reason: None; 190)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/spotipy/client.py", line 275, in _internal_call
+    response.raise_for_status()
+  File "/home/airflow/.local/lib/python3.12/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://api.spotify.com/v1/me/top/tracks?time_range=medium_term&limit=10&offset=0
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3006, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 274, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3161, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3185, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/etl.py", line 15, in get_spotify_data
+    top_tracks = sp.current_user_top_tracks(limit=10, time_range='medium_term')
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/spotipy/client.py", line 1520, in current_user_top_tracks
+    return self._get(
+           ^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/spotipy/client.py", line 327, in _get
+    return self._internal_call("GET", url, payload, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/spotipy/client.py", line 297, in _internal_call
+    raise SpotifyException(
+spotipy.exceptions.SpotifyException: http status: 401, code:-1 - https://api.spotify.com/v1/me/top/tracks?time_range=medium_term&limit=10&offset=0:
+ Valid user authentication required, reason: None
+[2025-02-24T02:00:10.223+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2025-02-24T02:00:10.301+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-02-24T02:00:10.306+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

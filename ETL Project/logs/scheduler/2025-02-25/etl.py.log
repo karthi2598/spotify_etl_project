@@ -1,0 +1,325 @@
+[2025-02-25T00:00:12.424+0000] {processor.py:186} INFO - Started process (PID=510) to work on /opt/airflow/dags/etl.py
+[2025-02-25T00:00:12.427+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl.py for tasks to queue
+[2025-02-25T00:00:12.436+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:00:12.435+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl.py
+[2025-02-25T00:00:12.479+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:00:12.475+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl.py", line 17
+    artist_name = "Taylor Swift"
+IndentationError: unexpected indent
+[2025-02-25T00:00:12.481+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/etl.py
+[2025-02-25T00:00:12.547+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl.py took 0.142 seconds
+[2025-02-25T00:00:42.658+0000] {processor.py:186} INFO - Started process (PID=573) to work on /opt/airflow/dags/etl.py
+[2025-02-25T00:00:42.660+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl.py for tasks to queue
+[2025-02-25T00:00:42.665+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:00:42.665+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl.py
+[2025-02-25T00:00:42.698+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:00:42.694+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl.py", line 17
+    artist_name = "Taylor Swift"
+IndentationError: unexpected indent
+[2025-02-25T00:00:42.699+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/etl.py
+[2025-02-25T00:00:42.749+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl.py took 0.101 seconds
+[2025-02-25T00:01:48.510+0000] {processor.py:186} INFO - Started process (PID=73) to work on /opt/airflow/dags/etl.py
+[2025-02-25T00:01:48.512+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl.py for tasks to queue
+[2025-02-25T00:01:48.515+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:01:48.515+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl.py
+[2025-02-25T00:01:48.537+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:01:48.535+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl.py", line 17
+    artist_name = "Taylor Swift"
+IndentationError: unexpected indent
+[2025-02-25T00:01:48.538+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/etl.py
+[2025-02-25T00:01:48.620+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl.py took 0.123 seconds
+[2025-02-25T00:02:54.776+0000] {processor.py:186} INFO - Started process (PID=137) to work on /opt/airflow/dags/etl.py
+[2025-02-25T00:02:54.799+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl.py for tasks to queue
+[2025-02-25T00:02:54.804+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:02:54.803+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl.py
+[2025-02-25T00:02:54.897+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:02:54.890+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl.py", line 17
+    artist_name = "Taylor Swift"
+IndentationError: unexpected indent
+[2025-02-25T00:02:54.898+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/etl.py
+[2025-02-25T00:02:54.929+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl.py took 0.160 seconds
+[2025-02-25T00:03:27.190+0000] {processor.py:186} INFO - Started process (PID=190) to work on /opt/airflow/dags/etl.py
+[2025-02-25T00:03:27.235+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl.py for tasks to queue
+[2025-02-25T00:03:27.242+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:03:27.241+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl.py
+[2025-02-25T00:03:27.366+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:03:27.363+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl.py", line 17
+    artist_name = "Taylor Swift"
+IndentationError: unexpected indent
+[2025-02-25T00:03:27.368+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/etl.py
+[2025-02-25T00:03:27.427+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl.py took 0.289 seconds
+[2025-02-25T00:03:36.033+0000] {processor.py:186} INFO - Started process (PID=208) to work on /opt/airflow/dags/etl.py
+[2025-02-25T00:03:36.034+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl.py for tasks to queue
+[2025-02-25T00:03:36.036+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:03:36.035+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl.py
+[2025-02-25T00:03:36.339+0000] {processor.py:925} INFO - DAG(s) 'ETL_Spotify_data' retrieved from /opt/airflow/dags/etl.py
+[2025-02-25T00:03:36.508+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:03:36.507+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T00:03:36.533+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:03:36.533+0000] {dag.py:4180} INFO - Setting next_dagrun for ETL_Spotify_data to 2025-02-25 00:00:00+00:00, run_after=2025-02-26 00:00:00+00:00
+[2025-02-25T00:03:36.572+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl.py took 0.549 seconds
+[2025-02-25T00:03:37.588+0000] {processor.py:186} INFO - Started process (PID=211) to work on /opt/airflow/dags/etl.py
+[2025-02-25T00:03:37.589+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl.py for tasks to queue
+[2025-02-25T00:03:37.591+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:03:37.591+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl.py
+[2025-02-25T00:03:37.735+0000] {processor.py:925} INFO - DAG(s) 'ETL_Spotify_data' retrieved from /opt/airflow/dags/etl.py
+[2025-02-25T00:03:37.763+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:03:37.762+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T00:03:37.809+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:03:37.809+0000] {dag.py:4180} INFO - Setting next_dagrun for ETL_Spotify_data to 2025-02-25 00:00:00+00:00, run_after=2025-02-26 00:00:00+00:00
+[2025-02-25T00:03:37.843+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl.py took 0.270 seconds
+[2025-02-25T00:04:32.175+0000] {processor.py:186} INFO - Started process (PID=71) to work on /opt/airflow/dags/etl.py
+[2025-02-25T00:04:32.184+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl.py for tasks to queue
+[2025-02-25T00:04:32.216+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:04:32.214+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl.py
+[2025-02-25T00:04:32.877+0000] {processor.py:925} INFO - DAG(s) 'ETL_Spotify_data' retrieved from /opt/airflow/dags/etl.py
+[2025-02-25T00:04:32.970+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:04:32.970+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T00:04:33.321+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:04:33.320+0000] {dag.py:4180} INFO - Setting next_dagrun for ETL_Spotify_data to 2025-02-25 00:00:00+00:00, run_after=2025-02-26 00:00:00+00:00
+[2025-02-25T00:04:33.387+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl.py took 1.262 seconds
+[2025-02-25T00:05:23.155+0000] {processor.py:186} INFO - Started process (PID=135) to work on /opt/airflow/dags/etl.py
+[2025-02-25T00:05:23.157+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl.py for tasks to queue
+[2025-02-25T00:05:23.160+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:05:23.159+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl.py
+[2025-02-25T00:05:23.322+0000] {processor.py:925} INFO - DAG(s) 'ETL_Spotify_data' retrieved from /opt/airflow/dags/etl.py
+[2025-02-25T00:05:23.380+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:05:23.379+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T00:05:23.435+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:05:23.435+0000] {dag.py:4180} INFO - Setting next_dagrun for ETL_Spotify_data to 2025-02-25 00:00:00+00:00, run_after=2025-02-26 00:00:00+00:00
+[2025-02-25T00:05:23.460+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl.py took 0.312 seconds
+[2025-02-25T00:05:53.561+0000] {processor.py:186} INFO - Started process (PID=199) to work on /opt/airflow/dags/etl.py
+[2025-02-25T00:05:53.563+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl.py for tasks to queue
+[2025-02-25T00:05:53.566+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:05:53.565+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl.py
+[2025-02-25T00:05:53.650+0000] {processor.py:925} INFO - DAG(s) 'ETL_Spotify_data' retrieved from /opt/airflow/dags/etl.py
+[2025-02-25T00:05:53.673+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:05:53.672+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T00:05:53.701+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:05:53.701+0000] {dag.py:4180} INFO - Setting next_dagrun for ETL_Spotify_data to 2025-02-25 00:00:00+00:00, run_after=2025-02-26 00:00:00+00:00
+[2025-02-25T00:05:53.728+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl.py took 0.174 seconds
+[2025-02-25T00:06:23.801+0000] {processor.py:186} INFO - Started process (PID=256) to work on /opt/airflow/dags/etl.py
+[2025-02-25T00:06:23.802+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl.py for tasks to queue
+[2025-02-25T00:06:23.805+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:06:23.805+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl.py
+[2025-02-25T00:06:24.001+0000] {processor.py:925} INFO - DAG(s) 'ETL_Spotify_data' retrieved from /opt/airflow/dags/etl.py
+[2025-02-25T00:06:24.026+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:06:24.026+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T00:06:24.056+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:06:24.056+0000] {dag.py:4180} INFO - Setting next_dagrun for ETL_Spotify_data to 2025-02-25 00:00:00+00:00, run_after=2025-02-26 00:00:00+00:00
+[2025-02-25T00:06:24.083+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl.py took 0.291 seconds
+[2025-02-25T00:06:54.193+0000] {processor.py:186} INFO - Started process (PID=319) to work on /opt/airflow/dags/etl.py
+[2025-02-25T00:06:54.194+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl.py for tasks to queue
+[2025-02-25T00:06:54.197+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:06:54.197+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl.py
+[2025-02-25T00:06:54.361+0000] {processor.py:925} INFO - DAG(s) 'ETL_Spotify_data' retrieved from /opt/airflow/dags/etl.py
+[2025-02-25T00:06:54.390+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:06:54.389+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T00:06:54.440+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:06:54.440+0000] {dag.py:4180} INFO - Setting next_dagrun for ETL_Spotify_data to 2025-02-25 00:00:00+00:00, run_after=2025-02-26 00:00:00+00:00
+[2025-02-25T00:06:54.478+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl.py took 0.293 seconds
+[2025-02-25T00:07:26.385+0000] {processor.py:186} INFO - Started process (PID=381) to work on /opt/airflow/dags/etl.py
+[2025-02-25T00:07:26.389+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl.py for tasks to queue
+[2025-02-25T00:07:26.403+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:07:26.401+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl.py
+[2025-02-25T00:07:26.542+0000] {processor.py:925} INFO - DAG(s) 'ETL_Spotify_data' retrieved from /opt/airflow/dags/etl.py
+[2025-02-25T00:07:26.575+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:07:26.575+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T00:07:26.613+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:07:26.613+0000] {dag.py:4180} INFO - Setting next_dagrun for ETL_Spotify_data to 2025-02-25 00:00:00+00:00, run_after=2025-02-26 00:00:00+00:00
+[2025-02-25T00:07:26.746+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl.py took 0.383 seconds
+[2025-02-25T00:07:57.770+0000] {processor.py:186} INFO - Started process (PID=446) to work on /opt/airflow/dags/etl.py
+[2025-02-25T00:07:57.772+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl.py for tasks to queue
+[2025-02-25T00:07:57.775+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:07:57.774+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl.py
+[2025-02-25T00:07:57.863+0000] {processor.py:925} INFO - DAG(s) 'ETL_Spotify_data' retrieved from /opt/airflow/dags/etl.py
+[2025-02-25T00:07:57.888+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:07:57.887+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T00:07:57.919+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:07:57.919+0000] {dag.py:4180} INFO - Setting next_dagrun for ETL_Spotify_data to 2025-02-25 00:00:00+00:00, run_after=2025-02-26 00:00:00+00:00
+[2025-02-25T00:07:57.947+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl.py took 0.184 seconds
+[2025-02-25T00:08:28.160+0000] {processor.py:186} INFO - Started process (PID=508) to work on /opt/airflow/dags/etl.py
+[2025-02-25T00:08:28.162+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl.py for tasks to queue
+[2025-02-25T00:08:28.165+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:08:28.164+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl.py
+[2025-02-25T00:08:28.250+0000] {processor.py:925} INFO - DAG(s) 'ETL_Spotify_data' retrieved from /opt/airflow/dags/etl.py
+[2025-02-25T00:08:28.276+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:08:28.275+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T00:08:28.310+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:08:28.310+0000] {dag.py:4180} INFO - Setting next_dagrun for ETL_Spotify_data to 2025-02-25 00:00:00+00:00, run_after=2025-02-26 00:00:00+00:00
+[2025-02-25T00:08:28.342+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl.py took 0.188 seconds
+[2025-02-25T00:08:55.473+0000] {processor.py:186} INFO - Started process (PID=564) to work on /opt/airflow/dags/etl.py
+[2025-02-25T00:08:55.474+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl.py for tasks to queue
+[2025-02-25T00:08:55.477+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:08:55.477+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl.py
+[2025-02-25T00:08:55.576+0000] {processor.py:925} INFO - DAG(s) 'ETL_Spotify_data' retrieved from /opt/airflow/dags/etl.py
+[2025-02-25T00:08:55.604+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:08:55.603+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T00:08:55.634+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:08:55.634+0000] {dag.py:4180} INFO - Setting next_dagrun for ETL_Spotify_data to 2025-02-25 00:00:00+00:00, run_after=2025-02-26 00:00:00+00:00
+[2025-02-25T00:08:55.676+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl.py took 0.210 seconds
+[2025-02-25T00:09:23.170+0000] {processor.py:186} INFO - Started process (PID=626) to work on /opt/airflow/dags/etl.py
+[2025-02-25T00:09:23.174+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl.py for tasks to queue
+[2025-02-25T00:09:23.190+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:09:23.186+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl.py
+[2025-02-25T00:09:23.455+0000] {processor.py:925} INFO - DAG(s) 'ETL_Spotify_data' retrieved from /opt/airflow/dags/etl.py
+[2025-02-25T00:09:23.550+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:09:23.549+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T00:09:23.680+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:09:23.678+0000] {dag.py:4180} INFO - Setting next_dagrun for ETL_Spotify_data to 2025-02-25 00:00:00+00:00, run_after=2025-02-26 00:00:00+00:00
+[2025-02-25T00:09:23.727+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl.py took 0.603 seconds
+[2025-02-25T00:09:25.071+0000] {processor.py:186} INFO - Started process (PID=629) to work on /opt/airflow/dags/etl.py
+[2025-02-25T00:09:25.073+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl.py for tasks to queue
+[2025-02-25T00:09:25.082+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:09:25.080+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl.py
+[2025-02-25T00:09:25.355+0000] {processor.py:925} INFO - DAG(s) 'ETL_Spotify_data' retrieved from /opt/airflow/dags/etl.py
+[2025-02-25T00:09:25.395+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:09:25.394+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T00:09:25.438+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:09:25.437+0000] {dag.py:4180} INFO - Setting next_dagrun for ETL_Spotify_data to 2025-02-25 00:00:00+00:00, run_after=2025-02-26 00:00:00+00:00
+[2025-02-25T00:09:25.474+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl.py took 0.426 seconds
+[2025-02-25T00:10:10.055+0000] {processor.py:186} INFO - Started process (PID=65) to work on /opt/airflow/dags/etl.py
+[2025-02-25T00:10:10.057+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl.py for tasks to queue
+[2025-02-25T00:10:10.061+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:10:10.060+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl.py
+[2025-02-25T00:10:10.217+0000] {processor.py:925} INFO - DAG(s) 'ETL_Spotify_data' retrieved from /opt/airflow/dags/etl.py
+[2025-02-25T00:10:10.253+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:10:10.253+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T00:10:10.291+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:10:10.290+0000] {dag.py:4180} INFO - Setting next_dagrun for ETL_Spotify_data to 2025-02-25 00:00:00+00:00, run_after=2025-02-26 00:00:00+00:00
+[2025-02-25T00:10:10.318+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl.py took 0.271 seconds
+[2025-02-25T00:11:43.364+0000] {processor.py:186} INFO - Started process (PID=135) to work on /opt/airflow/dags/etl.py
+[2025-02-25T00:11:43.365+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl.py for tasks to queue
+[2025-02-25T00:11:43.368+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:11:43.368+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl.py
+[2025-02-25T00:11:43.491+0000] {processor.py:925} INFO - DAG(s) 'ETL_Spotify_data' retrieved from /opt/airflow/dags/etl.py
+[2025-02-25T00:11:43.514+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:11:43.514+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T00:11:43.541+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:11:43.540+0000] {dag.py:4180} INFO - Setting next_dagrun for ETL_Spotify_data to 2025-02-25 00:00:00+00:00, run_after=2025-02-26 00:00:00+00:00
+[2025-02-25T00:11:43.564+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl.py took 0.206 seconds
+[2025-02-25T00:12:13.634+0000] {processor.py:186} INFO - Started process (PID=192) to work on /opt/airflow/dags/etl.py
+[2025-02-25T00:12:13.636+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl.py for tasks to queue
+[2025-02-25T00:12:13.639+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:12:13.639+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl.py
+[2025-02-25T00:12:13.753+0000] {processor.py:925} INFO - DAG(s) 'ETL_Spotify_data' retrieved from /opt/airflow/dags/etl.py
+[2025-02-25T00:12:13.778+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:12:13.778+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T00:12:13.807+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:12:13.807+0000] {dag.py:4180} INFO - Setting next_dagrun for ETL_Spotify_data to 2025-02-25 00:00:00+00:00, run_after=2025-02-26 00:00:00+00:00
+[2025-02-25T00:12:13.837+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl.py took 0.211 seconds
+[2025-02-25T00:12:44.898+0000] {processor.py:186} INFO - Started process (PID=250) to work on /opt/airflow/dags/etl.py
+[2025-02-25T00:12:44.899+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl.py for tasks to queue
+[2025-02-25T00:12:44.903+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:12:44.903+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl.py
+[2025-02-25T00:12:45.229+0000] {processor.py:925} INFO - DAG(s) 'ETL_Spotify_data' retrieved from /opt/airflow/dags/etl.py
+[2025-02-25T00:12:45.345+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:12:45.344+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T00:12:45.423+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:12:45.423+0000] {dag.py:4180} INFO - Setting next_dagrun for ETL_Spotify_data to 2025-02-25 00:00:00+00:00, run_after=2025-02-26 00:00:00+00:00
+[2025-02-25T00:12:45.471+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl.py took 0.587 seconds
+[2025-02-25T00:13:15.913+0000] {processor.py:186} INFO - Started process (PID=311) to work on /opt/airflow/dags/etl.py
+[2025-02-25T00:13:15.914+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl.py for tasks to queue
+[2025-02-25T00:13:15.917+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:13:15.917+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl.py
+[2025-02-25T00:13:16.103+0000] {processor.py:925} INFO - DAG(s) 'ETL_Spotify_data' retrieved from /opt/airflow/dags/etl.py
+[2025-02-25T00:13:16.178+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:13:16.177+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T00:13:16.211+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:13:16.211+0000] {dag.py:4180} INFO - Setting next_dagrun for ETL_Spotify_data to 2025-02-25 00:00:00+00:00, run_after=2025-02-26 00:00:00+00:00
+[2025-02-25T00:13:16.274+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl.py took 0.367 seconds
+[2025-02-25T00:13:48.209+0000] {processor.py:186} INFO - Started process (PID=376) to work on /opt/airflow/dags/etl.py
+[2025-02-25T00:13:48.210+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl.py for tasks to queue
+[2025-02-25T00:13:48.214+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:13:48.213+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl.py
+[2025-02-25T00:13:48.312+0000] {processor.py:925} INFO - DAG(s) 'ETL_Spotify_data' retrieved from /opt/airflow/dags/etl.py
+[2025-02-25T00:13:48.335+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:13:48.335+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T00:13:48.364+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:13:48.364+0000] {dag.py:4180} INFO - Setting next_dagrun for ETL_Spotify_data to 2025-02-25 00:00:00+00:00, run_after=2025-02-26 00:00:00+00:00
+[2025-02-25T00:13:48.387+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl.py took 0.186 seconds
+[2025-02-25T00:14:18.713+0000] {processor.py:186} INFO - Started process (PID=436) to work on /opt/airflow/dags/etl.py
+[2025-02-25T00:14:18.714+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl.py for tasks to queue
+[2025-02-25T00:14:18.718+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:14:18.718+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl.py
+[2025-02-25T00:14:18.883+0000] {processor.py:925} INFO - DAG(s) 'ETL_Spotify_data' retrieved from /opt/airflow/dags/etl.py
+[2025-02-25T00:14:18.956+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:14:18.955+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T00:14:19.076+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:14:19.075+0000] {dag.py:4180} INFO - Setting next_dagrun for ETL_Spotify_data to 2025-02-25 00:00:00+00:00, run_after=2025-02-26 00:00:00+00:00
+[2025-02-25T00:14:19.100+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl.py took 0.402 seconds
+[2025-02-25T00:14:49.242+0000] {processor.py:186} INFO - Started process (PID=501) to work on /opt/airflow/dags/etl.py
+[2025-02-25T00:14:49.243+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl.py for tasks to queue
+[2025-02-25T00:14:49.246+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:14:49.245+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl.py
+[2025-02-25T00:14:49.376+0000] {processor.py:925} INFO - DAG(s) 'ETL_Spotify_data' retrieved from /opt/airflow/dags/etl.py
+[2025-02-25T00:14:49.402+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:14:49.402+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T00:14:49.435+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:14:49.435+0000] {dag.py:4180} INFO - Setting next_dagrun for ETL_Spotify_data to 2025-02-25 00:00:00+00:00, run_after=2025-02-26 00:00:00+00:00
+[2025-02-25T00:14:49.478+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl.py took 0.243 seconds
+[2025-02-25T00:15:19.676+0000] {processor.py:186} INFO - Started process (PID=565) to work on /opt/airflow/dags/etl.py
+[2025-02-25T00:15:19.678+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl.py for tasks to queue
+[2025-02-25T00:15:19.682+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:15:19.681+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl.py
+[2025-02-25T00:15:19.813+0000] {processor.py:925} INFO - DAG(s) 'ETL_Spotify_data' retrieved from /opt/airflow/dags/etl.py
+[2025-02-25T00:15:19.889+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:15:19.889+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T00:15:19.920+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:15:19.920+0000] {dag.py:4180} INFO - Setting next_dagrun for ETL_Spotify_data to 2025-02-25 00:00:00+00:00, run_after=2025-02-26 00:00:00+00:00
+[2025-02-25T00:15:19.950+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl.py took 0.282 seconds
+[2025-02-25T00:15:50.597+0000] {processor.py:186} INFO - Started process (PID=629) to work on /opt/airflow/dags/etl.py
+[2025-02-25T00:15:50.599+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl.py for tasks to queue
+[2025-02-25T00:15:50.602+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:15:50.601+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl.py
+[2025-02-25T00:15:50.768+0000] {processor.py:925} INFO - DAG(s) 'ETL_Spotify_data' retrieved from /opt/airflow/dags/etl.py
+[2025-02-25T00:15:50.809+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:15:50.809+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T00:15:50.871+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:15:50.871+0000] {dag.py:4180} INFO - Setting next_dagrun for ETL_Spotify_data to 2025-02-25 00:00:00+00:00, run_after=2025-02-26 00:00:00+00:00
+[2025-02-25T00:15:50.913+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl.py took 0.323 seconds
+[2025-02-25T00:16:21.686+0000] {processor.py:186} INFO - Started process (PID=693) to work on /opt/airflow/dags/etl.py
+[2025-02-25T00:16:21.688+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl.py for tasks to queue
+[2025-02-25T00:16:21.690+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:16:21.690+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl.py
+[2025-02-25T00:16:21.856+0000] {processor.py:925} INFO - DAG(s) 'ETL_Spotify_data' retrieved from /opt/airflow/dags/etl.py
+[2025-02-25T00:16:21.880+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:16:21.880+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T00:16:21.913+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:16:21.913+0000] {dag.py:4180} INFO - Setting next_dagrun for ETL_Spotify_data to 2025-02-25 00:00:00+00:00, run_after=2025-02-26 00:00:00+00:00
+[2025-02-25T00:16:21.942+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl.py took 0.239 seconds
+[2025-02-25T00:16:52.445+0000] {processor.py:186} INFO - Started process (PID=757) to work on /opt/airflow/dags/etl.py
+[2025-02-25T00:16:52.446+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl.py for tasks to queue
+[2025-02-25T00:16:52.449+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:16:52.449+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl.py
+[2025-02-25T00:16:52.527+0000] {processor.py:925} INFO - DAG(s) 'ETL_Spotify_data' retrieved from /opt/airflow/dags/etl.py
+[2025-02-25T00:16:52.551+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:16:52.551+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T00:16:52.581+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:16:52.581+0000] {dag.py:4180} INFO - Setting next_dagrun for ETL_Spotify_data to 2025-02-25 00:00:00+00:00, run_after=2025-02-26 00:00:00+00:00
+[2025-02-25T00:16:52.605+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl.py took 0.167 seconds
+[2025-02-25T00:17:22.717+0000] {processor.py:186} INFO - Started process (PID=821) to work on /opt/airflow/dags/etl.py
+[2025-02-25T00:17:22.719+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl.py for tasks to queue
+[2025-02-25T00:17:22.721+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:17:22.721+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl.py
+[2025-02-25T00:17:22.803+0000] {processor.py:925} INFO - DAG(s) 'ETL_Spotify_data' retrieved from /opt/airflow/dags/etl.py
+[2025-02-25T00:17:22.827+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:17:22.827+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T00:17:22.855+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:17:22.855+0000] {dag.py:4180} INFO - Setting next_dagrun for ETL_Spotify_data to 2025-02-25 00:00:00+00:00, run_after=2025-02-26 00:00:00+00:00
+[2025-02-25T00:17:22.880+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl.py took 0.170 seconds
+[2025-02-25T00:17:53.459+0000] {processor.py:186} INFO - Started process (PID=884) to work on /opt/airflow/dags/etl.py
+[2025-02-25T00:17:53.461+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl.py for tasks to queue
+[2025-02-25T00:17:53.464+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:17:53.464+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl.py
+[2025-02-25T00:17:53.545+0000] {processor.py:925} INFO - DAG(s) 'ETL_Spotify_data' retrieved from /opt/airflow/dags/etl.py
+[2025-02-25T00:17:53.569+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:17:53.568+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T00:17:53.596+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:17:53.595+0000] {dag.py:4180} INFO - Setting next_dagrun for ETL_Spotify_data to 2025-02-25 00:00:00+00:00, run_after=2025-02-26 00:00:00+00:00
+[2025-02-25T00:17:53.621+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl.py took 0.169 seconds
+[2025-02-25T00:18:24.741+0000] {processor.py:186} INFO - Started process (PID=948) to work on /opt/airflow/dags/etl.py
+[2025-02-25T00:18:24.743+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl.py for tasks to queue
+[2025-02-25T00:18:24.747+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:18:24.746+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl.py
+[2025-02-25T00:18:24.828+0000] {processor.py:925} INFO - DAG(s) 'ETL_Spotify_data' retrieved from /opt/airflow/dags/etl.py
+[2025-02-25T00:18:24.862+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:18:24.861+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T00:18:24.911+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:18:24.911+0000] {dag.py:4180} INFO - Setting next_dagrun for ETL_Spotify_data to 2025-02-25 00:00:00+00:00, run_after=2025-02-26 00:00:00+00:00
+[2025-02-25T00:18:24.956+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl.py took 0.236 seconds
+[2025-02-25T00:18:55.664+0000] {processor.py:186} INFO - Started process (PID=1013) to work on /opt/airflow/dags/etl.py
+[2025-02-25T00:18:55.665+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl.py for tasks to queue
+[2025-02-25T00:18:55.669+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:18:55.669+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl.py
+[2025-02-25T00:18:55.771+0000] {processor.py:925} INFO - DAG(s) 'ETL_Spotify_data' retrieved from /opt/airflow/dags/etl.py
+[2025-02-25T00:18:55.802+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:18:55.802+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T00:18:55.847+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:18:55.847+0000] {dag.py:4180} INFO - Setting next_dagrun for ETL_Spotify_data to 2025-02-25 00:00:00+00:00, run_after=2025-02-26 00:00:00+00:00
+[2025-02-25T00:18:55.878+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl.py took 0.227 seconds
+[2025-02-25T00:19:26.634+0000] {processor.py:186} INFO - Started process (PID=1077) to work on /opt/airflow/dags/etl.py
+[2025-02-25T00:19:26.635+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl.py for tasks to queue
+[2025-02-25T00:19:26.638+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:19:26.638+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl.py
+[2025-02-25T00:19:26.812+0000] {processor.py:925} INFO - DAG(s) 'ETL_Spotify_data' retrieved from /opt/airflow/dags/etl.py
+[2025-02-25T00:19:26.926+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:19:26.925+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T00:19:26.980+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:19:26.979+0000] {dag.py:4180} INFO - Setting next_dagrun for ETL_Spotify_data to 2025-02-25 00:00:00+00:00, run_after=2025-02-26 00:00:00+00:00
+[2025-02-25T00:19:27.022+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl.py took 0.396 seconds
+[2025-02-25T00:19:57.392+0000] {processor.py:186} INFO - Started process (PID=1142) to work on /opt/airflow/dags/etl.py
+[2025-02-25T00:19:57.453+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl.py for tasks to queue
+[2025-02-25T00:19:57.460+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:19:57.459+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl.py
+[2025-02-25T00:19:57.742+0000] {processor.py:925} INFO - DAG(s) 'ETL_Spotify_data' retrieved from /opt/airflow/dags/etl.py
+[2025-02-25T00:19:57.798+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:19:57.798+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T00:19:57.837+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:19:57.837+0000] {dag.py:4180} INFO - Setting next_dagrun for ETL_Spotify_data to 2025-02-25 00:00:00+00:00, run_after=2025-02-26 00:00:00+00:00
+[2025-02-25T00:19:57.858+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl.py took 0.502 seconds
+[2025-02-25T00:20:28.236+0000] {processor.py:186} INFO - Started process (PID=1206) to work on /opt/airflow/dags/etl.py
+[2025-02-25T00:20:28.237+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl.py for tasks to queue
+[2025-02-25T00:20:28.240+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:20:28.240+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl.py
+[2025-02-25T00:20:28.467+0000] {processor.py:925} INFO - DAG(s) 'ETL_Spotify_data' retrieved from /opt/airflow/dags/etl.py
+[2025-02-25T00:20:28.488+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:20:28.488+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T00:20:28.515+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:20:28.515+0000] {dag.py:4180} INFO - Setting next_dagrun for ETL_Spotify_data to 2025-02-25 00:00:00+00:00, run_after=2025-02-26 00:00:00+00:00
+[2025-02-25T00:20:28.536+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl.py took 0.308 seconds
+[2025-02-25T00:20:58.895+0000] {processor.py:186} INFO - Started process (PID=1275) to work on /opt/airflow/dags/etl.py
+[2025-02-25T00:20:58.896+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl.py for tasks to queue
+[2025-02-25T00:20:58.899+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:20:58.898+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl.py
+[2025-02-25T00:20:59.034+0000] {processor.py:925} INFO - DAG(s) 'ETL_Spotify_data' retrieved from /opt/airflow/dags/etl.py
+[2025-02-25T00:20:59.057+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:20:59.057+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T00:20:59.083+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:20:59.083+0000] {dag.py:4180} INFO - Setting next_dagrun for ETL_Spotify_data to 2025-02-25 00:00:00+00:00, run_after=2025-02-26 00:00:00+00:00
+[2025-02-25T00:20:59.105+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl.py took 0.220 seconds
+[2025-02-25T00:21:29.327+0000] {processor.py:186} INFO - Started process (PID=1339) to work on /opt/airflow/dags/etl.py
+[2025-02-25T00:21:29.328+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl.py for tasks to queue
+[2025-02-25T00:21:29.331+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:21:29.331+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl.py
+[2025-02-25T00:21:29.425+0000] {processor.py:925} INFO - DAG(s) 'ETL_Spotify_data' retrieved from /opt/airflow/dags/etl.py
+[2025-02-25T00:21:29.452+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:21:29.452+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T00:21:29.483+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:21:29.482+0000] {dag.py:4180} INFO - Setting next_dagrun for ETL_Spotify_data to 2025-02-25 00:00:00+00:00, run_after=2025-02-26 00:00:00+00:00
+[2025-02-25T00:21:29.505+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl.py took 0.189 seconds
+[2025-02-25T00:22:00.092+0000] {processor.py:186} INFO - Started process (PID=1403) to work on /opt/airflow/dags/etl.py
+[2025-02-25T00:22:00.093+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl.py for tasks to queue
+[2025-02-25T00:22:00.097+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:22:00.096+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl.py
+[2025-02-25T00:22:00.410+0000] {processor.py:925} INFO - DAG(s) 'ETL_Spotify_data' retrieved from /opt/airflow/dags/etl.py
+[2025-02-25T00:22:00.439+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:22:00.439+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T00:22:00.472+0000] {logging_mixin.py:190} INFO - [2025-02-25T00:22:00.472+0000] {dag.py:4180} INFO - Setting next_dagrun for ETL_Spotify_data to 2025-02-25 00:00:00+00:00, run_after=2025-02-26 00:00:00+00:00
+[2025-02-25T00:22:00.497+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl.py took 0.438 seconds

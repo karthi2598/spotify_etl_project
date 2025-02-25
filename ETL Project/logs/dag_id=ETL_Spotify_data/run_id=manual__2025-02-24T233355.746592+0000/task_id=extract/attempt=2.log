@@ -1,0 +1,113 @@
+[2025-02-24T23:50:39.868+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-02-24T23:50:39.910+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ETL_Spotify_data.extract manual__2025-02-24T23:33:55.746592+00:00 [queued]>
+[2025-02-24T23:50:39.940+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ETL_Spotify_data.extract manual__2025-02-24T23:33:55.746592+00:00 [queued]>
+[2025-02-24T23:50:39.942+0000] {taskinstance.py:2867} INFO - Starting attempt 2 of 2
+[2025-02-24T23:50:40.008+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): extract> on 2025-02-24 23:33:55.746592+00:00
+[2025-02-24T23:50:40.032+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=163) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-02-24T23:50:40.036+0000] {standard_task_runner.py:72} INFO - Started process 165 to run task
+[2025-02-24T23:50:40.042+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'ETL_Spotify_data', 'extract', 'manual__2025-02-24T23:33:55.746592+00:00', '--job-id', '43', '--raw', '--subdir', 'DAGS_FOLDER/etl.py', '--cfg-path', '/tmp/tmpko_y1iy0']
+[2025-02-24T23:50:40.047+0000] {standard_task_runner.py:105} INFO - Job 43: Subtask extract
+[2025-02-24T23:50:40.209+0000] {task_command.py:467} INFO - Running <TaskInstance: ETL_Spotify_data.extract manual__2025-02-24T23:33:55.746592+00:00 [running]> on host 08c6255db477
+[2025-02-24T23:50:40.991+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ETL_Spotify_data' AIRFLOW_CTX_TASK_ID='extract' AIRFLOW_CTX_EXECUTION_DATE='2025-02-24T23:33:55.746592+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-02-24T23:33:55.746592+00:00'
+[2025-02-24T23:50:40.994+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-02-24T23:50:40.996+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-02-24T23:50:40.997+0000] {logging_mixin.py:190} INFO - Current task name:extract state:running start_date:2025-02-24 23:50:39.911865+00:00
+[2025-02-24T23:50:40.998+0000] {logging_mixin.py:190} INFO - Dag name:ETL_Spotify_data and current dag run status:running
+[2025-02-24T23:50:40.999+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-02-24T23:50:41.001+0000] {taskinstance.py:3313} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/etl.py", line 13, in get_spotify_data
+    client_credentials_manager = SpotifyClientCredentials(client_id=client_id, client_secret=client_secret)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'SpotifyClientCredentials' is not defined
+[2025-02-24T23:50:41.050+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-02-24T23:50:41.469+0000] {logging_mixin.py:190} INFO - Task start:2025-02-24 23:50:39.911865+00:00 end:2025-02-24 23:50:41.048967+00:00 duration:1.137102
+[2025-02-24T23:50:41.473+0000] {logging_mixin.py:190} INFO - Task:<Task(PythonOperator): extract> dag:<DAG: ETL_Spotify_data> dagrun:<DagRun ETL_Spotify_data @ 2025-02-24 23:33:55.746592+00:00: manual__2025-02-24T23:33:55.746592+00:00, state:running, queued_at: 2025-02-24 23:33:55.827324+00:00. externally triggered: True>
+[2025-02-24T23:50:41.486+0000] {logging_mixin.py:190} INFO - Failure caused by name 'SpotifyClientCredentials' is not defined
+[2025-02-24T23:50:41.490+0000] {taskinstance.py:1226} INFO - Marking task as FAILED. dag_id=ETL_Spotify_data, task_id=extract, run_id=manual__2025-02-24T23:33:55.746592+00:00, execution_date=20250224T233355, start_date=20250224T235039, end_date=20250224T235041
+[2025-02-24T23:50:41.650+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-02-24T23:50:41.651+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 43 for task extract (name 'SpotifyClientCredentials' is not defined; 165)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3006, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 274, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3161, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3185, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/etl.py", line 13, in get_spotify_data
+    client_credentials_manager = SpotifyClientCredentials(client_id=client_id, client_secret=client_secret)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'SpotifyClientCredentials' is not defined
+[2025-02-24T23:50:41.750+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2025-02-24T23:50:41.858+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-02-24T23:50:41.868+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

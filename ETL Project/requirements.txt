@@ -1,0 +1,9 @@
+spotipy
+pandas
+apache-airflow-providers-postgres
+matplotlib
+SQLAlchemy
+psycopg2-binary
+requests
+apache-airflow
+datetime
